@@ -229,27 +229,4 @@ mobileItems.on('click', (e) => {
         default:
             break;
     };
-    // if(indexItem == 0) {
-    //     console.log(indexItem);
-    //     let href0 = 'project-details.html';
-    //     $(e.target).attr('href',href0);
-    // } else if (indexItem == 1) {
-    //     console.log(indexItem);
-    //     let href1 = 'studio.html';
-    //     $(e.target).attr('href',href1);
-    // } else if (indexItem == 2) {
-    //     let href2 = '';
-    //     $(e.target).attr('href',href2);
-    // } else if (indexItem == 3) {
-    //     console.log(indexItem);
-    //     let href3 = 'gbox-cafe.html';
-    //     $(e.target).attr('href',href3);
-    // } else if (indexItem == 4) {
-    //     console.log(indexItem);
-    //     let href4 = 'allwork.html';
-    //     $(e.target).attr('href',href4);
-    // } else {
-    //     let href5 = 'contact.html';
-    //     $(e.target).attr('href',href5);
-    // }
 })
