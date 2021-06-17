@@ -189,11 +189,22 @@ menuItemCenter.on('click', (e) => {
 
 //menuMobile 
 let menuMobile = $('header .menuMobile');
-let menuBtn = $('.header-top .logo .btnMobile')
-menuBtn.on('click', (e) => {
+let openMenuBtn = $('.header-top .logo .btnMobile');
+let closeMenuBtn = $('.header-top .logo .btnCloseMobile');
+openMenuBtn.on('click', (e) => {
     e.preventDefault();
-    console.log("OK");
     menuMobile.toggleClass('active');
+    openMenuBtn.hide();
+    closeMenuBtn.show();
+    document.body.style.overflow = 'hidden';
+})
+
+closeMenuBtn.on('click', (e) => {
+    e.preventDefault();
+    menuMobile.removeClass('active');
+    closeMenuBtn.hide();
+    openMenuBtn.show();
+    document.body.style.overflow = 'auto';
 })
 
 //Clicking nav in MenuMobile
