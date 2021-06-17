@@ -158,7 +158,7 @@ backHome.on('click', () => {
 //menu
 let menuItemLeft = $('.nav .nav-left li a');
 menuItemLeft.on('click', (e) => {
-    let href= 'project-details.html';
+    let href= 'about.html';
     menuItemLeft.attr("href",href);
 })
 let menuItemRight = $('.nav .nav-right li a');
@@ -203,7 +203,7 @@ mobileItems.on('click', (e) => {
     let indexItem = mobileItems.index(e.target);
     switch(indexItem){
         case 0: 
-            let href = 'project-details.html';
+            let href = 'about.html';
             $(e.target).attr('href',href);
             break;
         case 1:
